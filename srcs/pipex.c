@@ -6,14 +6,14 @@
 /*   By: shmoreno <shmoreno@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/25 14:09:12 by shmoreno          #+#    #+#             */
-/*   Updated: 2024/03/02 12:56:38 by shmoreno         ###   ########.fr       */
+/*   Updated: 2024/03/17 19:13:32 by shmoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/pipex.h"
 
-//Fonction qui sert pour ouvrir les fichiers et dupliquer les descripteurs
-//de fichiers. Afin de rediriger les entrées et sorties des commandes.
+// Function used to open files and duplicate file descriptors
+// in order to redirect the input and output of commands.
 void	ft_open_file(char **argv, t_pipex *pipex,
 	int flag_open, int flag_dup)
 {
@@ -42,7 +42,7 @@ void	ft_open_file(char **argv, t_pipex *pipex,
 	}
 }
 
-//Fonction qui sert à créer un processus fils pour la première commande.
+// Function used to create a child process for the first command.
 void	ft_children1(char **argv, char **envp, t_pipex *pipex)
 {
 	pipe(pipex->pipe);
@@ -60,7 +60,7 @@ void	ft_children1(char **argv, char **envp, t_pipex *pipex)
 	}
 }
 
-//Fonction qui sert à créer un processus fils pour la deuxième commande.
+// Function used to create a child process for the second command.
 void	ft_children2(char **argv, char **envp, t_pipex *pipex)
 {
 	pipex->children2 = fork();

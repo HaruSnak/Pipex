@@ -6,7 +6,7 @@
 /*   By: shmoreno <shmoreno@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 10:24:46 by shmoreno          #+#    #+#             */
-/*   Updated: 2024/03/02 20:43:57 by shmoreno         ###   ########.fr       */
+/*   Updated: 2024/03/17 18:33:34 by shmoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 # include <string.h>
 # include <unistd.h>
 # include <sys/wait.h>
-# include "libft/libft.h"
+# include "libft/includes/libft.h"
 
 typedef struct s_pipex
 {

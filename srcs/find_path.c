@@ -6,14 +6,14 @@
 /*   By: shmoreno <shmoreno@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 12:49:09 by shmoreno          #+#    #+#             */
-/*   Updated: 2024/03/02 12:53:50 by shmoreno         ###   ########.fr       */
+/*   Updated: 2024/03/17 19:12:51 by shmoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/pipex.h"
 
-// Cette fonction sert à trouver le chemin d'accès d'une commande
-// sous forme de tableau de chaînes de caractères.
+// This function is used to find the path of a command
+// as an array of strings.
 char	**ft_path(char **envp)
 {
 	int		i;
@@ -35,9 +35,9 @@ char	**ft_path(char **envp)
 	return (path_f);
 }
 
-// Cette fonction sert à exécuter une commande.
-// En reprenant les chemins d'acces trouvés par ft_path,
-// elle exécute la commande passée en paramètre.
+// This function is used to execute a command.
+// Taking the paths found by ft_path,
+// it executes the command passed as a parameter.
 void	ft_execve(char *argv[], char **envp)
 {
 	int		i;
