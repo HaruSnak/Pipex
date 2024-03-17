@@ -25,12 +25,6 @@ Picture a water pipeline: each command acts as a filter, processing data and sen
 ### **Compilation**
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/HaruSnak/libft.git
-
-# Go into the repository
-$ cd libft
-
 # To compile the program
 $ make
 
