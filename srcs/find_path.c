@@ -63,4 +63,6 @@ void	ft_execve(char *argv[], char **envp)
 	}
 	ft_free_char(cmd_extract);
 	ft_free_char(path);
+	write(2, "command not found\n", 18);
+	exit(127);
 }

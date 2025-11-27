@@ -30,10 +30,12 @@ all: ${NAME}
 clean:
 	${RM} ${OBJ_1} ${OBJ_2} ${NAME}
 	@cd $(LIBFTDIR) && $(MAKE) clean
+	@cd includes/printf && $(MAKE) clean
 
 fclean: clean
 	${RM} ${NAME}
 	@cd $(LIBFTDIR) && $(MAKE) fclean
+	@cd includes/printf && $(MAKE) fclean
 
 re: clean all
 

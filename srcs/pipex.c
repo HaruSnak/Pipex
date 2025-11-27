@@ -93,6 +93,7 @@ int	main(int argc, char **argv, char **envp)
 		exit(EXIT_FAILURE);
 	}
 	ft_children1(argv, envp, &pipex);
+	waitpid(pipex.children1, NULL, 0);
 	ft_children2(argv, envp, &pipex);
 	return (0);
 }
